@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2% 3% 2% 3%;
+  background-color: white;
+  height: 90%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  //   background-color: red;
+  height: 30%;
+  width: 50%;
+}
+
+.list {
+  display: flex;
+  width: 100%;
+  color: black;
+}
+
+h1,
+h3 {
+  margin: 0;
+}
