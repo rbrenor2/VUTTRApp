@@ -10,6 +10,9 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatListModule } from "@angular/material/list";
 import { ToolCardComponent } from "./pages/home/components/tool-card/tool-card.component";
 import { MatCardModule } from "@angular/material/card";
+import { HttpClientModule } from "@angular/common/http";
+import { ScrollingModule } from "@angular/cdk/scrolling";
+import { VuttrApiService } from "./services/vuttr-api.service";
 
 @NgModule({
   declarations: [
@@ -23,10 +26,12 @@ import { MatCardModule } from "@angular/material/card";
     AppRoutingModule,
     BrowserAnimationsModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule,
+    ScrollingModule
   ],
   entryComponents: [],
-  providers: [],
+  providers: [VuttrApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

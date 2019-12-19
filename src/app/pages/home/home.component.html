@@ -4,15 +4,17 @@
     <h3 class="subtitle">Very Useful Tools To Remember</h3>
   </div>
   <div class="tool-list">
-    <div class="top-bar">
+    <!-- <div class="top-bar">
       TopBar
-    </div>
-    <div class="list">
-      <mat-list role="list">
-        <mat-list-item role="listitem">Item 1</mat-list-item>
-        <mat-list-item role="listitem">Item 2</mat-list-item>
-        <mat-list-item role="listitem">Item 3</mat-list-item>
-      </mat-list>
-    </div>
+    </div> -->
+    <cdk-virtual-scroll-viewport itemSize="5" class="viewport">
+      <app-tool-card
+        class="tool-card"
+        [toolData]="tool"
+        *cdkVirtualFor="let tool of _vuttrApi.$tools | async"
+      >
+        <mat-card-title>{{ tool.title }}</mat-card-title>
+      </app-tool-card>
+    </cdk-virtual-scroll-viewport>
   </div>
 </div>
