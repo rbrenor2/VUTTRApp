@@ -91,6 +91,7 @@ export class VuttrApiService {
       .subscribe(
         (data: Tool) => {
           this.updateLoading(false);
+          this.getTools();
         },
         (error: Error) => {
           this.error.next(error);
@@ -105,6 +106,7 @@ export class VuttrApiService {
       .subscribe(
         (data: Tool) => {
           this.updateLoading(false);
+          this.getTools();
         },
         (error: Error) => {
           this.error.next(error);

@@ -13,6 +13,8 @@ import { MatCardModule } from "@angular/material/card";
 import { HttpClientModule } from "@angular/common/http";
 import { ScrollingModule } from "@angular/cdk/scrolling";
 import { VuttrApiService } from "./services/vuttr-api.service";
+import { MatButtonModule } from "@angular/material/button";
+import { MatCheckboxModule } from "@angular/material/checkbox";
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { VuttrApiService } from "./services/vuttr-api.service";
     MatListModule,
     MatCardModule,
     HttpClientModule,
-    ScrollingModule
+    ScrollingModule,
+    MatButtonModule,
+    MatCheckboxModule
   ],
   entryComponents: [],
   providers: [VuttrApiService],

@@ -22,10 +22,7 @@ const testTool = new Tool(
 })
 export class HomeComponent implements OnInit {
   loading: boolean = true;
-  constructor(
-    private _vuttrApi: VuttrApiService,
-    private _changeDetectorRef: ChangeDetectorRef
-  ) {}
+  constructor(private _vuttrApi: VuttrApiService) {}
 
   ngOnInit() {
     this._vuttrApi.getTools();

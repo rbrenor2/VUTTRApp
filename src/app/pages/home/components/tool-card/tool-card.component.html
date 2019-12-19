@@ -1,3 +1,8 @@
 <mat-card>
-  {{ toolData.title }}
+  <div class="header">
+    <div class="title">{{ toolData.title }}</div>
+    <button mat-button>x remover</button>
+  </div>
+  <div class="description">{{ toolData.description }}</div>
+  <div class="tags">{{ toolData.tags }}</div>
 </mat-card>
