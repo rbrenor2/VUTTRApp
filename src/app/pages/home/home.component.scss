@@ -56,6 +56,12 @@ h3 {
   align-items: center;
 }
 
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .search input {
   margin-right: 5px;
 }
@@ -66,5 +72,27 @@ h3 {
 
 .top-bar button {
   height: 100%;
+  width: 20%;
+}
+
+button:hover {
+  background: #2f55cc;
+}
+
+button {
+  background: #365df0;
+  color: white;
+}
+
+button:active {
+  background: #244aa8;
+}
+
+input {
   width: 30%;
+  height: 30%;
+  background: #f5f4f6 0% 0% no-repeat padding-box;
+  border: 1px solid #ebeaed;
+  border-radius: 5px;
+  opacity: 1;
 }

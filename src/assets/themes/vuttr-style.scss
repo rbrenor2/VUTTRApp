@@ -1,0 +1,239 @@
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+
+@font-face {
+  font-family: "Source Semibold";
+  src: url("../fonts/SourceSansPro-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Regular";
+  src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$vuttr-ink: (
+  50: #e3e2e7,
+  100: #b9b6c4,
+  200: #8b869d,
+  300: #5d5575,
+  400: #3a3058,
+  500: #170c3a,
+  600: #140a34,
+  700: #11082c,
+  800: #0d0625,
+  900: #070318,
+  A100: #7158ff,
+  A200: #4625ff,
+  A400: #2500f1,
+  A700: #2100d7,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #ffffff,
+    A200: #ffffff,
+    A400: #ffffff,
+    A700: #ffffff
+  )
+);
+
+$vuttr-blue: (
+  50: #e5e9f5,
+  100: #bdc9e5,
+  200: #92a5d4,
+  300: #6680c2,
+  400: #4565b5,
+  500: #244aa8,
+  600: #2043a0,
+  700: #1b3a97,
+  800: #16328d,
+  900: #0d227d,
+  A100: #aebbff,
+  A200: #7b8fff,
+  A400: #4864ff,
+  A700: #2f4eff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #ffffff,
+    A700: #ffffff
+  )
+);
+
+$vuttr-green: (
+  50: #e2f3ec,
+  100: #b7e0ce,
+  200: #87ccae,
+  300: #56b88e,
+  400: #32a875,
+  500: #0e995d,
+  600: #0c9155,
+  700: #0a864b,
+  800: #087c41,
+  900: #046b30,
+  A100: #9affbf,
+  A200: #67ff9e,
+  A400: #34ff7d,
+  A700: #1aff6d,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000
+  )
+);
+
+$vuttr-red: (
+  50: #f4e8e8,
+  100: #e4c5c5,
+  200: #d29f9f,
+  300: #c07979,
+  400: #b35c5c,
+  500: #a53f3f,
+  600: #9d3939,
+  700: #933131,
+  800: #8a2929,
+  900: #791b1b,
+  A100: #ffb3b3,
+  A200: #ff8080,
+  A400: #ff4d4d,
+  A700: #ff3434,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #ffffff
+  )
+);
+
+$vuttr-yellow: (
+  50: #f3ede6,
+  100: #e0d3bf,
+  200: #ccb695,
+  300: #b8986b,
+  400: #a8824b,
+  500: #996c2b,
+  600: #916426,
+  700: #865920,
+  800: #7c4f1a,
+  900: #6b3d10,
+  A100: #ffcba0,
+  A200: #ffaf6d,
+  A400: #ff933a,
+  A700: #ff8520,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000
+  )
+);
+
+$vuttr-pallete-primary: mat-palette($vuttr-ink, 500);
+$vuttr-pallete-accent: mat-palette($vuttr-yellow, A200);
+
+// The warn palette is optional (defaults to red).
+$vuttr-pallete-warn: mat-palette($vuttr-red, 353372);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$vuttr-theme: mat-light-theme(
+  $vuttr-pallete-primary,
+  $vuttr-pallete-accent,
+  $vuttr-pallete-warn
+);
+
+.button-regular {
+  background-color: #365df0;
+}
+
+.button-hover {
+  background-color: #2f55cc;
+}
+
+.button-click {
+  background-color: #244aa8;
+}
+
+.button-disabled {
+  background-color: #b9c6fa;
+}
+
+.font-semibold {
+  font-family: "Source Semibold";
+}
+
+.font-regular {
+  font-family: "Source Regular";
+}
+
+.vuttr-button-small {
+  font-family: "Source Regular";
+  font-size: 18px;
+}
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+// @include angular-material;
+
+@include angular-material-theme($vuttr-theme);

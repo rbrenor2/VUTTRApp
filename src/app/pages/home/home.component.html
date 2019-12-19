@@ -1,7 +1,7 @@
 <div class="container">
   <div class="header">
-    <h1 class="title">VUTTR</h1>
-    <h3 class="subtitle">Very Useful Tools To Remember</h3>
+    <h1 class="title font-semibold">VUTTR</h1>
+    <h3 class="subtitle font-regular">Very Useful Tools To Remember</h3>
   </div>
   <div class="tool-list">
     <div class="top-bar">
@@ -10,7 +10,9 @@
         <mat-checkbox class="tags-checkbox">search in tags only</mat-checkbox>
       </div>
 
-      <button mat-flat-button>+ Add</button>
+      <button mat-flat-button class="vuttr-button-small">
+        + Add
+      </button>
     </div>
     <cdk-virtual-scroll-viewport itemSize="5" class="viewport">
       <app-tool-card
