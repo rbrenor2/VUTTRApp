@@ -94,23 +94,23 @@ button:active {
   background: #244aa8;
 }
 
-input {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background: #f5f4f6 0% 0% no-repeat padding-box;
-  border: 1px solid #ebeaed;
-  border-radius: 5px;
-  opacity: 1;
-}
+// input {
+//   display: flex;
+//   width: 100%;
+//   height: 100%;
+//   background: #f5f4f6 0% 0% no-repeat padding-box;
+//   border: 1px solid #ebeaed;
+//   border-radius: 5px;
+//   opacity: 1;
+// }
 
-input:focus {
-  background-color: #ebeaed;
-}
+// input:focus {
+//   background-color: #ebeaed;
+// }
 
-*:focus {
-  outline: none;
-}
+// *:focus {
+//   outline: none;
+// }
 
 .loading {
   display: flex;

@@ -6,6 +6,8 @@ import {
 } from "@angular/core";
 import { Tool } from "src/app/models/Tool.model";
 import { VuttrApiService } from "src/app/services/vuttr-api.service";
+import { MatDialog } from "@angular/material/dialog";
+import { AddDialogComponent } from "./components/add-dialog/add-dialog.component";
 
 const testTool = new Tool(
   "Brenos Tool",
@@ -24,7 +26,7 @@ export class HomeComponent implements OnInit {
   onlyTags: boolean = false;
   loading: boolean = true;
 
-  constructor(private _vuttrApi: VuttrApiService) {}
+  constructor(private _vuttrApi: VuttrApiService, public dialog: MatDialog) {}
 
   ngOnInit() {
     this._vuttrApi.$loading.subscribe(value => {
@@ -40,5 +42,17 @@ export class HomeComponent implements OnInit {
     } else {
       this._vuttrApi.getToolByTitle(value);
     }
+  }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(AddDialogComponent, {
+      width: "20%",
+      data: {}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log("The dialog was closed");
+      // this.animal = result;
+    });
   }
 }

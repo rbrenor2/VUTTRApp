@@ -1,0 +1,28 @@
+<div class="container">
+  <h1 class="title">
+    Add new tool
+  </h1>
+  <div class="form">
+    <input matInput class="search-input" placeholder="Name" value="" />
+    <input matInput class="search-input" placeholder="Description" value="" />
+    <input matInput class="search-input" placeholder="Tags" value="" />
+  </div>
+  <div class="buttons">
+    <button
+      mat-flat-button
+      color="accent"
+      (click)="openDialog()"
+      class="vuttr-button-small"
+    >
+      Cancel
+    </button>
+    <button
+      mat-flat-button
+      color="primary"
+      (click)="openDialog()"
+      class="vuttr-button-small"
+    >
+      Add
+    </button>
+  </div>
+</div>

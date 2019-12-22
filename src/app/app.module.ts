@@ -17,13 +17,16 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatInputModule } from "@angular/material/input";
 import { MatProgressBarModule } from "@angular/material/progress-bar";
+import { MatDialogModule } from "@angular/material/dialog";
+import { AddDialogComponent } from "./pages/home/components/add-dialog/add-dialog.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    ToolCardComponent
+    ToolCardComponent,
+    AddDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -36,9 +39,10 @@ import { MatProgressBarModule } from "@angular/material/progress-bar";
     MatButtonModule,
     MatCheckboxModule,
     MatInputModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatDialogModule
   ],
-  entryComponents: [],
+  entryComponents: [AddDialogComponent],
   providers: [VuttrApiService],
   bootstrap: [AppComponent]
 })
