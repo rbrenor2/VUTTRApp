@@ -15,6 +15,8 @@ import { ScrollingModule } from "@angular/cdk/scrolling";
 import { VuttrApiService } from "./services/vuttr-api.service";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCheckboxModule } from "@angular/material/checkbox";
+import { MatInputModule } from "@angular/material/input";
+import { MatProgressBarModule } from "@angular/material/progress-bar";
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { MatCheckboxModule } from "@angular/material/checkbox";
     HttpClientModule,
     ScrollingModule,
     MatButtonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatInputModule,
+    MatProgressBarModule
   ],
   entryComponents: [],
   providers: [VuttrApiService],

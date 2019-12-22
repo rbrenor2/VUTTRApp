@@ -1,7 +1,14 @@
 <mat-card>
   <div class="header">
     <div class="title font-semibold">{{ toolData.title }}</div>
-    <button mat-button class="font-regular" color="primary">x remover</button>
+    <button
+      mat-button
+      disableRipple="true"
+      class="font-regular"
+      color="primary"
+    >
+      x remover
+    </button>
   </div>
   <div class="description">{{ toolData.description }}</div>
   <div class="tags">{{ toolData.tags }}</div>

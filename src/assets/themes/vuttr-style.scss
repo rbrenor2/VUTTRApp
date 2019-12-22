@@ -71,7 +71,7 @@ $vuttr-blue: (
   A100: #aebbff,
   A200: #7b8fff,
   A400: #4864ff,
-  A700: #2f4eff,
+  A700: #365df0,
   contrast: (
     50: #000000,
     100: #000000,
@@ -189,11 +189,11 @@ $vuttr-yellow: (
   )
 );
 
-$vuttr-pallete-primary: mat-palette($vuttr-ink, 500);
+$vuttr-pallete-primary: mat-palette($vuttr-blue, A700);
 $vuttr-pallete-accent: mat-palette($vuttr-yellow, A200);
 
 // The warn palette is optional (defaults to red).
-$vuttr-pallete-warn: mat-palette($vuttr-red, 353372);
+$vuttr-pallete-warn: mat-palette($vuttr-red, A700);
 
 // Create the theme object (a Sass map containing all of the palettes).
 $vuttr-theme: mat-light-theme(
@@ -201,22 +201,6 @@ $vuttr-theme: mat-light-theme(
   $vuttr-pallete-accent,
   $vuttr-pallete-warn
 );
-
-.button-regular {
-  background-color: #365df0;
-}
-
-.button-hover {
-  background-color: #2f55cc;
-}
-
-.button-click {
-  background-color: #244aa8;
-}
-
-.button-disabled {
-  background-color: #b9c6fa;
-}
 
 .font-semibold {
   font-family: "Source Semibold";

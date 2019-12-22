@@ -6,11 +6,19 @@
   <div class="tool-list">
     <div class="top-bar">
       <div class="search">
-        <input class="search-input" placeholder="Favorite food" value="Sushi" />
-        <mat-checkbox class="tags-checkbox">search in tags only</mat-checkbox>
+        <input
+          matInput
+          class="search-input"
+          (input)="onSearchChange($event.target.value)"
+          placeholder="Pesquisa"
+          value=""
+        />
+        <mat-checkbox color="accent" [checked]="onlyTags" class="tags-checkbox"
+          >search in tags only</mat-checkbox
+        >
       </div>
 
-      <button mat-flat-button class="vuttr-button-small">
+      <button mat-flat-button color="primary" class="vuttr-button-small">
         + Add
       </button>
     </div>
