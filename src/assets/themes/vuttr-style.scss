@@ -213,11 +213,42 @@ $vuttr-theme: mat-light-theme(
 .vuttr-button-small {
   font-family: "Source Regular";
   font-size: 18px;
+  background: #365df0 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+  width: 174px;
+  height: 50px;
+  text-align: center;
+  // font: Semibold 18px/24px Source Sans Pro;
+  letter-spacing: 0.36px;
+  // color: #ffffff;
+  opacity: 1;
 }
 
 h1 {
   font-family: "Source Regular";
-  font-size: 24px;
+  font-size: 42px;
+  text-align: left;
+  letter-spacing: 0.84px;
+  color: #170c3a;
+  opacity: 1;
+}
+
+h3 {
+  text-align: left;
+  font-family: "Source Regular";
+  font-size: 30px;
+  letter-spacing: 0.6px;
+  color: #170c3a;
+  opacity: 1;
+}
+
+h4 {
+  text-align: left;
+  font-family: "Source Semibold";
+  font-size: 26px;
+  letter-spacing: 0.52px;
+  opacity: 1;
 }
 
 input {
@@ -236,6 +267,22 @@ input:focus {
 
 *:focus {
   outline: none;
+}
+
+mat-flat-button,
+.secondary {
+  background-color: #b7c6fc 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+}
+
+body {
+  text-align: left;
+  font-family: "Source Regular";
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  // color: #170c3a;
+  opacity: 1;
 }
 
 // Include theme styles for core and each component used in your app.

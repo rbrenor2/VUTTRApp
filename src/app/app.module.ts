@@ -19,6 +19,7 @@ import { MatInputModule } from "@angular/material/input";
 import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatDialogModule } from "@angular/material/dialog";
 import { AddDialogComponent } from "./pages/home/components/add-dialog/add-dialog.component";
+import { TagComponent } from './pages/home/components/tag/tag.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AddDialogComponent } from "./pages/home/components/add-dialog/add-dialo
     HomeComponent,
     LoginComponent,
     ToolCardComponent,
-    AddDialogComponent
+    AddDialogComponent,
+    TagComponent
   ],
   imports: [
     BrowserModule,

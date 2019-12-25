@@ -1,18 +1,24 @@
 <div class="container">
-  <h1 class="title">
-    Add new tool
-  </h1>
-  <div class="form">
-    <input matInput class="search-input" placeholder="Name" value="" />
-    <input matInput class="search-input" placeholder="Description" value="" />
-    <input matInput class="search-input" placeholder="Tags" value="" />
+  <div class="content">
+    <h3 class="title">
+      Add new tool
+    </h3>
+    <div class="form">
+      <input matInput class="search-input name" placeholder="Name" value="" />
+      <input
+        matInput
+        class="search-input description"
+        placeholder="Description"
+        value=""
+      />
+      <input matInput class="search-input tags" placeholder="Tags" value="" />
+    </div>
   </div>
   <div class="buttons">
     <button
       mat-flat-button
-      color="accent"
       (click)="openDialog()"
-      class="vuttr-button-small"
+      class="vuttr-button-small secondary"
     >
       Cancel
     </button>

@@ -1,15 +1,19 @@
 <mat-card>
   <div class="header">
-    <div class="title font-semibold">{{ toolData.title }}</div>
+    <h4 class="title">
+      <a [href]="toolData.link">{{ toolData.title }}</a>
+    </h4>
     <button
       mat-button
       disableRipple="true"
       class="font-regular"
-      color="primary"
+      (click)="deleteTool()"
     >
       x remover
     </button>
   </div>
   <div class="description">{{ toolData.description }}</div>
-  <div class="tags">{{ toolData.tags }}</div>
+  <div class="tags">
+    <app-tag [tag]="tag" *ngFor="let tag of toolData.tags"></app-tag>
+  </div>
 </mat-card>

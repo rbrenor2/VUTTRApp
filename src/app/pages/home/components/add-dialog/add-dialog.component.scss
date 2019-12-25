@@ -1,8 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+}
+
 h1 {
   margin: 0;
 }
 
 .title {
+  display: flex;
+  height: 10%;
   margin-bottom: 5%;
 }
 
@@ -10,7 +25,29 @@ input {
   margin-bottom: 2%;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+}
+
 .buttons {
   display: flex;
   justify-content: flex-end;
+  height: 15%;
+}
+
+.name {
+  display: flex;
+  height: 20%;
+}
+
+.description {
+  display: flex;
+  height: 60%;
+}
+
+.tags {
+  display: flex;
+  height: 20%;
 }

@@ -9,13 +9,6 @@ import { VuttrApiService } from "src/app/services/vuttr-api.service";
 import { MatDialog } from "@angular/material/dialog";
 import { AddDialogComponent } from "./components/add-dialog/add-dialog.component";
 
-const testTool = new Tool(
-  "Brenos Tool",
-  "https://big.com.br",
-  "Descriptioning my description",
-  ["testing", "lint", "readability"]
-);
-
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
@@ -46,7 +39,8 @@ export class HomeComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(AddDialogComponent, {
-      width: "20%",
+      width: "50%",
+      height: "70%",
       data: {}
     });
 
